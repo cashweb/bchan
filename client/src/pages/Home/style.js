@@ -6,6 +6,9 @@ export default theme => ({
   },
   logo: {
     width: '20em',
-    minWidth: '20vw'
+    minWidth: '20vw',
+    display: 'block',
+    margin: 'auto',
+    marginBottom: '1em'
   }
 })

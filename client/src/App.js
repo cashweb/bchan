@@ -1,15 +1,10 @@
 import React from 'react'
 import { Router, Redirect } from '@reach/router'
 import { Theme } from 'components'
-import * as pages from 'pages'
+import { Home } from 'pages'
 
-export default <Theme>
+export default () => <Theme>
   <Router>
-    {Object.entries(pages).map(([currentPage, Page]) => {
-      return <Page
-        key={currentPage.toLowerCase()}
-        path={`/${currentPage.toLowerCase()}`}
-      />
-    }}
+    <Home path="/" />
   </Router>
 </Theme>
